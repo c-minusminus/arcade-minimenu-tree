@@ -89,7 +89,7 @@ namespace menuTree {
             if (menuTrees[0].menu.x + menuTrees[0].menu.width / 2 > screen.width) {
                 const distance = screen.width - (menuTrees[0].menu.x + menuTrees[0].menu.width / 2)
                 for (let menuTree of menuTrees) {
-                    menuTree.menu.setPosition(menuTree.menu.x - distance, menuTree.menu.y)
+                    menuTree.menu.setPosition(menuTree.menu.x + distance, menuTree.menu.y)
                 }
             }
         }
